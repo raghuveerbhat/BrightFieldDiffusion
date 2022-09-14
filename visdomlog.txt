@@ -1,0 +1,2504 @@
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+INFO:root:Application Started
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.58ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.44ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.62ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.48ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.36ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+INFO:tornado.access:200 GET / (127.0.0.1) 13.97ms
+INFO:tornado.access:200 GET /static/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9 (127.0.0.1) 0.83ms
+INFO:tornado.access:200 GET /static/css/bootstrap.min.css?v=ec3bb52a00e176a7181d454dffaea219 (127.0.0.1) 6.59ms
+INFO:tornado.access:200 GET /static/css/react-resizable-styles.css?v=9f91a8dbf4d8f7ef1399e625660405f4 (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/css/react-grid-layout-styles.css?v=7dc8934d2f9ac5303b8f0bb1148152a0 (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/js/jquery.min.js?v=e071abda8fe61194711cfc2ab99fe104 (127.0.0.1) 10.55ms
+INFO:tornado.access:200 GET /static/js/react-react.min.js?v=bca103da5b5404d93783ccf73e0e9d1e (127.0.0.1) 0.59ms
+INFO:tornado.access:200 GET /static/css/style.css?v=fb4729780f2360ef5d3dba13f8ff2873 (127.0.0.1) 0.62ms
+INFO:tornado.access:200 GET /static/js/layout_bin_packer.js?v=6c46683ed70fbb1443caf3531243836d (127.0.0.1) 0.61ms
+INFO:tornado.access:200 GET /static/js/react-dom.min.js?v=950495cc51ccb90612cf0fe0bb44f8f3 (127.0.0.1) 10.88ms
+INFO:tornado.access:200 GET /static/js/plotly-plotly.min.js?v=1f15d7ed9dd856a12c0469be4eede0cf (127.0.0.1) 12.86ms
+INFO:tornado.access:200 GET /static/js/main.js?v=47fc3afa811b358b354df09184e392e7 (127.0.0.1) 7.95ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.75ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.37ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.64ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.67ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.47ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET /static/js/mathjax-MathJax.js?v=49565b9ce89c64da075a5a39969b366e (127.0.0.1) 1.21ms
+INFO:tornado.access:200 GET /static/fonts/glyphicons-halflings-regular.woff2 (127.0.0.1) 0.92ms
+INFO:tornado.access:101 GET /socket (127.0.0.1) 0.53ms
+INFO:root:Opened new socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET /favicon.png (127.0.0.1) 12.68ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.27ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.93ms
+INFO:tornado.access:200 GET /extensions/MathMenu.js?V=2.7.1 (127.0.0.1) 18.82ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b926af2cf1e","eid":"main"}
+INFO:root:closing window window_3b0b926af2cf1e
+INFO:tornado.access:200 GET /extensions/MathZoom.js?V=2.7.1 (127.0.0.1) 21.63ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b93b64d52ac","eid":"main"}
+INFO:root:closing window window_3b0b93b64d52ac
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.55ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.40ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.95ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.64ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.48ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.78ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.60ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.71ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.85ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.67ms
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.56ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.42ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET / (127.0.0.1) 13.01ms
+INFO:tornado.access:200 GET /static/css/bootstrap.min.css?v=ec3bb52a00e176a7181d454dffaea219 (127.0.0.1) 6.88ms
+INFO:tornado.access:200 GET /static/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9 (127.0.0.1) 0.69ms
+INFO:tornado.access:200 GET /static/css/react-resizable-styles.css?v=9f91a8dbf4d8f7ef1399e625660405f4 (127.0.0.1) 0.68ms
+INFO:tornado.access:200 GET /static/js/jquery.min.js?v=e071abda8fe61194711cfc2ab99fe104 (127.0.0.1) 3.95ms
+INFO:tornado.access:200 GET /static/css/react-grid-layout-styles.css?v=7dc8934d2f9ac5303b8f0bb1148152a0 (127.0.0.1) 0.57ms
+INFO:tornado.access:200 GET /static/js/react-react.min.js?v=bca103da5b5404d93783ccf73e0e9d1e (127.0.0.1) 0.72ms
+INFO:tornado.access:200 GET /static/css/style.css?v=fb4729780f2360ef5d3dba13f8ff2873 (127.0.0.1) 0.78ms
+INFO:tornado.access:200 GET /static/js/react-dom.min.js?v=950495cc51ccb90612cf0fe0bb44f8f3 (127.0.0.1) 2.67ms
+INFO:tornado.access:200 GET /static/js/layout_bin_packer.js?v=6c46683ed70fbb1443caf3531243836d (127.0.0.1) 0.59ms
+INFO:tornado.access:200 GET /static/js/plotly-plotly.min.js?v=1f15d7ed9dd856a12c0469be4eede0cf (127.0.0.1) 12.34ms
+INFO:tornado.access:200 GET /static/js/main.js?v=47fc3afa811b358b354df09184e392e7 (127.0.0.1) 16.19ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.46ms
+INFO:tornado.access:200 GET /static/js/mathjax-MathJax.js?v=49565b9ce89c64da075a5a39969b366e (127.0.0.1) 1.19ms
+INFO:tornado.access:200 GET /static/fonts/glyphicons-halflings-regular.woff2 (127.0.0.1) 1.17ms
+INFO:tornado.access:101 GET /socket (127.0.0.1) 0.64ms
+INFO:root:Opened new socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET /favicon.png (127.0.0.1) 42.17ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 51.53ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 24.13ms
+INFO:tornado.access:200 GET /extensions/MathMenu.js?V=2.7.1 (127.0.0.1) 12.77ms
+INFO:tornado.access:200 GET /extensions/MathZoom.js?V=2.7.1 (127.0.0.1) 13.02ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.54ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.35ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.01ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.93ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.09ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9503343b38","eid":"main"}
+INFO:root:closing window window_3b0b9503343b38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b95033820ca","eid":"main"}
+INFO:root:closing window window_3b0b95033820ca
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b95033af3d8","eid":"main"}
+INFO:root:closing window window_3b0b95033af3d8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950891553e","eid":"main"}
+INFO:root:closing window window_3b0b950891553e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9508929d24","eid":"main"}
+INFO:root:closing window window_3b0b9508929d24
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9508941a0a","eid":"main"}
+INFO:root:closing window window_3b0b9508941a0a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9509651944","eid":"main"}
+INFO:root:closing window window_3b0b9509651944
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9509668568","eid":"main"}
+INFO:root:closing window window_3b0b9509668568
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950967dfaa","eid":"main"}
+INFO:root:closing window window_3b0b950967dfaa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950a5fda1c","eid":"main"}
+INFO:root:closing window window_3b0b950a5fda1c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950a613508","eid":"main"}
+INFO:root:closing window window_3b0b950a613508
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950a629070","eid":"main"}
+INFO:root:closing window window_3b0b950a629070
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950b6636fc","eid":"main"}
+INFO:root:closing window window_3b0b950b6636fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950b67f172","eid":"main"}
+INFO:root:closing window window_3b0b950b67f172
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950b69b648","eid":"main"}
+INFO:root:closing window window_3b0b950b69b648
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950c81295a","eid":"main"}
+INFO:root:closing window window_3b0b950c81295a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950c83d740","eid":"main"}
+INFO:root:closing window window_3b0b950c83d740
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950c87414a","eid":"main"}
+INFO:root:closing window window_3b0b950c87414a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950d2965d2","eid":"main"}
+INFO:root:closing window window_3b0b950d2965d2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950d2bd452","eid":"main"}
+INFO:root:closing window window_3b0b950d2bd452
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b950d2dbd48","eid":"main"}
+INFO:root:closing window window_3b0b950d2dbd48
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b951aaefe16","eid":"main"}
+INFO:root:closing window window_3b0b951aaefe16
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9533ed5cf8","eid":"main"}
+INFO:root:closing window window_3b0b9533ed5cf8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9533eece38","eid":"main"}
+INFO:root:closing window window_3b0b9533eece38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0b9533f05fe0","eid":"main"}
+INFO:root:closing window window_3b0b9533f05fe0
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.16ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.99ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.26ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.03ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.04ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.30ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.32ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.94ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.26ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.84ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.04ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.08ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.12ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.26ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.99ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.87ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.07ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.11ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.89ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 7.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 4.88ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.04ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.84ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.06ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.87ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.07ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.01ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.21ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.00ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.06ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.25ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.21ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.21ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.03ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.03ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.97ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.85ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.03ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.86ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.03ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.86ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.96ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.88ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.04ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.86ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.22ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.53ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.39ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.47ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.40ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+INFO:root:Application Started
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.59ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.43ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.63ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.46ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.42ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+INFO:root:Application Started
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.51ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.41ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.65ms
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.56ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.43ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET / (127.0.0.1) 15.52ms
+INFO:tornado.access:200 GET /static/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9 (127.0.0.1) 0.79ms
+INFO:tornado.access:200 GET /static/css/react-resizable-styles.css?v=9f91a8dbf4d8f7ef1399e625660405f4 (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/css/bootstrap.min.css?v=ec3bb52a00e176a7181d454dffaea219 (127.0.0.1) 7.29ms
+INFO:tornado.access:200 GET /static/css/react-grid-layout-styles.css?v=7dc8934d2f9ac5303b8f0bb1148152a0 (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/js/react-react.min.js?v=bca103da5b5404d93783ccf73e0e9d1e (127.0.0.1) 0.63ms
+INFO:tornado.access:200 GET /static/js/layout_bin_packer.js?v=6c46683ed70fbb1443caf3531243836d (127.0.0.1) 0.62ms
+INFO:tornado.access:200 GET /static/js/jquery.min.js?v=e071abda8fe61194711cfc2ab99fe104 (127.0.0.1) 12.47ms
+INFO:tornado.access:200 GET /static/js/react-dom.min.js?v=950495cc51ccb90612cf0fe0bb44f8f3 (127.0.0.1) 7.07ms
+INFO:tornado.access:200 GET /static/js/main.js?v=47fc3afa811b358b354df09184e392e7 (127.0.0.1) 8.07ms
+INFO:tornado.access:200 GET /static/js/plotly-plotly.min.js?v=1f15d7ed9dd856a12c0469be4eede0cf (127.0.0.1) 12.29ms
+INFO:tornado.access:200 GET /static/css/style.css?v=fb4729780f2360ef5d3dba13f8ff2873 (127.0.0.1) 1.00ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.53ms
+INFO:tornado.access:200 GET /static/js/mathjax-MathJax.js?v=49565b9ce89c64da075a5a39969b366e (127.0.0.1) 1.04ms
+INFO:tornado.access:200 GET /static/fonts/glyphicons-halflings-regular.woff2 (127.0.0.1) 1.00ms
+INFO:tornado.access:101 GET /socket (127.0.0.1) 0.52ms
+INFO:root:Opened new socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET /favicon.png (127.0.0.1) 12.86ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.34ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.97ms
+INFO:tornado.access:200 GET /extensions/MathMenu.js?V=2.7.1 (127.0.0.1) 12.91ms
+INFO:tornado.access:200 GET /extensions/MathZoom.js?V=2.7.1 (127.0.0.1) 22.75ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bff527793f8","eid":"main"}
+INFO:root:closing window window_3b0bff527793f8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bff851d6e40","eid":"main"}
+INFO:root:closing window window_3b0bff851d6e40
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.88ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.41ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.49ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.36ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.37ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.07ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.44ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.85ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.09ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.64ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.51ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.93ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.52ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 4.30ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.64ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.78ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.60ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.86ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.79ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.87ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.75ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.52ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.52ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.48ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.71ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.55ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.88ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.51ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.76ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.97ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.03ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 5.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.79ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.49ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 13.39ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.46ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.26ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.83ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.55ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.90ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.55ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.52ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.53ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.76ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.55ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.78ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.80ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.73ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.53ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.50ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.51ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.35ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.83ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.76ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.78ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.90ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.78ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.82ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.85ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.79ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.99ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.79ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.80ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.75ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.86ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.75ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.51ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.78ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.60ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.86ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.64ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.73ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.89ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.00ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.48ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.50ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.52ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.55ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.67ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.74ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.76ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.38ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.28ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.77ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.44ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.64ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.62ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.80ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.76ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.71ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.53ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.71ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.73ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.49ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.55ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.52ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.59ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.63ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.50ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.68ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.54ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.51ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.57ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.43ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.92ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.46ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.60ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.58ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.60ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.46ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.44ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bff9f6e021e","eid":"main"}
+INFO:root:closing window window_3b0bff9f6e021e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bff9f711676","eid":"main"}
+INFO:root:closing window window_3b0bff9f711676
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa39f780e","eid":"main"}
+INFO:root:closing window window_3b0bffa39f780e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3a44b74","eid":"main"}
+INFO:root:closing window window_3b0bffa3a44b74
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3b336b2","eid":"main"}
+INFO:root:closing window window_3b0bffa3b336b2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3b7de4c","eid":"main"}
+INFO:root:closing window window_3b0bffa3b7de4c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3c6b22c","eid":"main"}
+INFO:root:closing window window_3b0bffa3c6b22c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3cb4d5c","eid":"main"}
+INFO:root:closing window window_3b0bffa3cb4d5c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3db89a8","eid":"main"}
+INFO:root:closing window window_3b0bffa3db89a8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3e0a248","eid":"main"}
+INFO:root:closing window window_3b0bffa3e0a248
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3f01132","eid":"main"}
+INFO:root:closing window window_3b0bffa3f01132
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa3f491b8","eid":"main"}
+INFO:root:closing window window_3b0bffa3f491b8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa403917a","eid":"main"}
+INFO:root:closing window window_3b0bffa403917a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa408654c","eid":"main"}
+INFO:root:closing window window_3b0bffa408654c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa417778a","eid":"main"}
+INFO:root:closing window window_3b0bffa417778a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa41c5b5e","eid":"main"}
+INFO:root:closing window window_3b0bffa41c5b5e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa42b7ee6","eid":"main"}
+INFO:root:closing window window_3b0bffa42b7ee6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa430526e","eid":"main"}
+INFO:root:closing window window_3b0bffa430526e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa43fb418","eid":"main"}
+INFO:root:closing window window_3b0bffa43fb418
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa444799a","eid":"main"}
+INFO:root:closing window window_3b0bffa444799a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4540400","eid":"main"}
+INFO:root:closing window window_3b0bffa4540400
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4595520","eid":"main"}
+INFO:root:closing window window_3b0bffa4595520
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa469097a","eid":"main"}
+INFO:root:closing window window_3b0bffa469097a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa46e8ae0","eid":"main"}
+INFO:root:closing window window_3b0bffa46e8ae0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa47de126","eid":"main"}
+INFO:root:closing window window_3b0bffa47de126
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa482b854","eid":"main"}
+INFO:root:closing window window_3b0bffa482b854
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa491f6a8","eid":"main"}
+INFO:root:closing window window_3b0bffa491f6a8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa496f3b4","eid":"main"}
+INFO:root:closing window window_3b0bffa496f3b4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4a63598","eid":"main"}
+INFO:root:closing window window_3b0bffa4a63598
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4ab1fe2","eid":"main"}
+INFO:root:closing window window_3b0bffa4ab1fe2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4ba426c","eid":"main"}
+INFO:root:closing window window_3b0bffa4ba426c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4bf1976","eid":"main"}
+INFO:root:closing window window_3b0bffa4bf1976
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4ce385e","eid":"main"}
+INFO:root:closing window window_3b0bffa4ce385e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4d309e4","eid":"main"}
+INFO:root:closing window window_3b0bffa4d309e4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4e2560a","eid":"main"}
+INFO:root:closing window window_3b0bffa4e2560a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4e716d6","eid":"main"}
+INFO:root:closing window window_3b0bffa4e716d6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4f62b56","eid":"main"}
+INFO:root:closing window window_3b0bffa4f62b56
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa4faf882","eid":"main"}
+INFO:root:closing window window_3b0bffa4faf882
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa50ac7d6","eid":"main"}
+INFO:root:closing window window_3b0bffa50ac7d6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa50f85e2","eid":"main"}
+INFO:root:closing window window_3b0bffa50f85e2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa51eb444","eid":"main"}
+INFO:root:closing window window_3b0bffa51eb444
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5237792","eid":"main"}
+INFO:root:closing window window_3b0bffa5237792
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5329aae","eid":"main"}
+INFO:root:closing window window_3b0bffa5329aae
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5376ec8","eid":"main"}
+INFO:root:closing window window_3b0bffa5376ec8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa546897e","eid":"main"}
+INFO:root:closing window window_3b0bffa546897e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa54b56ae","eid":"main"}
+INFO:root:closing window window_3b0bffa54b56ae
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa55a952e","eid":"main"}
+INFO:root:closing window window_3b0bffa55a952e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa55f6838","eid":"main"}
+INFO:root:closing window window_3b0bffa55f6838
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa56e99a2","eid":"main"}
+INFO:root:closing window window_3b0bffa56e99a2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa57365ee","eid":"main"}
+INFO:root:closing window window_3b0bffa57365ee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa58287b8","eid":"main"}
+INFO:root:closing window window_3b0bffa58287b8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5874f3c","eid":"main"}
+INFO:root:closing window window_3b0bffa5874f3c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa59670d0","eid":"main"}
+INFO:root:closing window window_3b0bffa59670d0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa59b51a6","eid":"main"}
+INFO:root:closing window window_3b0bffa59b51a6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5aa895a","eid":"main"}
+INFO:root:closing window window_3b0bffa5aa895a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5af49b4","eid":"main"}
+INFO:root:closing window window_3b0bffa5af49b4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5ce2d7c","eid":"main"}
+INFO:root:closing window window_3b0bffa5ce2d7c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa5de2dfa","eid":"main"}
+INFO:root:closing window window_3b0bffa5de2dfa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6009d44","eid":"main"}
+INFO:root:closing window window_3b0bffa6009d44
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa60c7948","eid":"main"}
+INFO:root:closing window window_3b0bffa60c7948
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa61d8472","eid":"main"}
+INFO:root:closing window window_3b0bffa61d8472
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6225e7e","eid":"main"}
+INFO:root:closing window window_3b0bffa6225e7e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6317582","eid":"main"}
+INFO:root:closing window window_3b0bffa6317582
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6361efa","eid":"main"}
+INFO:root:closing window window_3b0bffa6361efa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa645275a","eid":"main"}
+INFO:root:closing window window_3b0bffa645275a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa649d824","eid":"main"}
+INFO:root:closing window window_3b0bffa649d824
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa658fa7c","eid":"main"}
+INFO:root:closing window window_3b0bffa658fa7c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6685b38","eid":"main"}
+INFO:root:closing window window_3b0bffa6685b38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa69001ae","eid":"main"}
+INFO:root:closing window window_3b0bffa69001ae
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa69dcb5a","eid":"main"}
+INFO:root:closing window window_3b0bffa69dcb5a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6b2d312","eid":"main"}
+INFO:root:closing window window_3b0bffa6b2d312
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6b7cd1e","eid":"main"}
+INFO:root:closing window window_3b0bffa6b7cd1e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6c6f6b0","eid":"main"}
+INFO:root:closing window window_3b0bffa6c6f6b0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6cb9cc0","eid":"main"}
+INFO:root:closing window window_3b0bffa6cb9cc0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6db3892","eid":"main"}
+INFO:root:closing window window_3b0bffa6db3892
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6dffd94","eid":"main"}
+INFO:root:closing window window_3b0bffa6dffd94
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6ef04e0","eid":"main"}
+INFO:root:closing window window_3b0bffa6ef04e0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa6f3c1c0","eid":"main"}
+INFO:root:closing window window_3b0bffa6f3c1c0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa702fbfe","eid":"main"}
+INFO:root:closing window window_3b0bffa702fbfe
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa707c9c6","eid":"main"}
+INFO:root:closing window window_3b0bffa707c9c6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa716ed38","eid":"main"}
+INFO:root:closing window window_3b0bffa716ed38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa71bc396","eid":"main"}
+INFO:root:closing window window_3b0bffa71bc396
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa72ade74","eid":"main"}
+INFO:root:closing window window_3b0bffa72ade74
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa72f8a4e","eid":"main"}
+INFO:root:closing window window_3b0bffa72f8a4e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa73ea0e0","eid":"main"}
+INFO:root:closing window window_3b0bffa73ea0e0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa743a34a","eid":"main"}
+INFO:root:closing window window_3b0bffa743a34a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa752ce38","eid":"main"}
+INFO:root:closing window window_3b0bffa752ce38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7575c86","eid":"main"}
+INFO:root:closing window window_3b0bffa7575c86
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7664b88","eid":"main"}
+INFO:root:closing window window_3b0bffa7664b88
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa76ae4c0","eid":"main"}
+INFO:root:closing window window_3b0bffa76ae4c0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa77a153a","eid":"main"}
+INFO:root:closing window window_3b0bffa77a153a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa77ec018","eid":"main"}
+INFO:root:closing window window_3b0bffa77ec018
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa78de15a","eid":"main"}
+INFO:root:closing window window_3b0bffa78de15a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa792d394","eid":"main"}
+INFO:root:closing window window_3b0bffa792d394
+INFO:tornado.access:200 POST /events (127.0.0.1) 12.12ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 17.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 21.23ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 18.81ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.88ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.28ms
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 874, in wrapper
+    yield fut
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/websocket.py", line 876, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.55ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.45ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET / (127.0.0.1) 13.07ms
+INFO:tornado.access:200 GET /static/css/bootstrap.min.css?v=ec3bb52a00e176a7181d454dffaea219 (127.0.0.1) 1.68ms
+INFO:tornado.access:200 GET /static/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9 (127.0.0.1) 0.93ms
+INFO:tornado.access:200 GET /static/js/jquery.min.js?v=e071abda8fe61194711cfc2ab99fe104 (127.0.0.1) 3.12ms
+INFO:tornado.access:200 GET /static/css/react-resizable-styles.css?v=9f91a8dbf4d8f7ef1399e625660405f4 (127.0.0.1) 0.96ms
+INFO:tornado.access:200 GET /static/css/react-grid-layout-styles.css?v=7dc8934d2f9ac5303b8f0bb1148152a0 (127.0.0.1) 0.63ms
+INFO:tornado.access:200 GET /static/js/react-react.min.js?v=bca103da5b5404d93783ccf73e0e9d1e (127.0.0.1) 0.68ms
+INFO:tornado.access:200 GET /static/js/layout_bin_packer.js?v=6c46683ed70fbb1443caf3531243836d (127.0.0.1) 0.71ms
+INFO:tornado.access:200 GET /static/js/react-dom.min.js?v=950495cc51ccb90612cf0fe0bb44f8f3 (127.0.0.1) 2.64ms
+INFO:tornado.access:200 GET /static/js/plotly-plotly.min.js?v=1f15d7ed9dd856a12c0469be4eede0cf (127.0.0.1) 50.53ms
+INFO:tornado.access:200 GET /static/css/style.css?v=fb4729780f2360ef5d3dba13f8ff2873 (127.0.0.1) 0.92ms
+INFO:tornado.access:200 GET /static/js/main.js?v=47fc3afa811b358b354df09184e392e7 (127.0.0.1) 7.28ms
+INFO:tornado.access:200 GET /static/js/mathjax-MathJax.js?v=49565b9ce89c64da075a5a39969b366e (127.0.0.1) 1.32ms
+INFO:tornado.access:200 GET /static/fonts/glyphicons-halflings-regular.woff2 (127.0.0.1) 3.91ms
+INFO:tornado.access:101 GET /socket (127.0.0.1) 0.68ms
+INFO:root:Opened new socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET /favicon.png (127.0.0.1) 36.29ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 236.94ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 239.32ms
+INFO:tornado.access:200 GET /extensions/MathMenu.js?V=2.7.1 (127.0.0.1) 22.28ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.91ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.48ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.56ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.37ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 GET /extensions/MathZoom.js?V=2.7.1 (127.0.0.1) 13.89ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.26ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.92ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7a1d8aa","eid":"main"}
+INFO:root:closing window window_3b0bffa7a1d8aa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7a695ee","eid":"main"}
+INFO:root:closing window window_3b0bffa7a695ee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7b5c1e4","eid":"main"}
+INFO:root:closing window window_3b0bffa7b5c1e4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7ba8da0","eid":"main"}
+INFO:root:closing window window_3b0bffa7ba8da0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7c99ba4","eid":"main"}
+INFO:root:closing window window_3b0bffa7c99ba4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7ce5be2","eid":"main"}
+INFO:root:closing window window_3b0bffa7ce5be2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7dda548","eid":"main"}
+INFO:root:closing window window_3b0bffa7dda548
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7e254fc","eid":"main"}
+INFO:root:closing window window_3b0bffa7e254fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7f17558","eid":"main"}
+INFO:root:closing window window_3b0bffa7f17558
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7f63b56","eid":"main"}
+INFO:root:closing window window_3b0bffa7f63b56
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa80577e4","eid":"main"}
+INFO:root:closing window window_3b0bffa80577e4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa80a2b08","eid":"main"}
+INFO:root:closing window window_3b0bffa80a2b08
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa81a28c6","eid":"main"}
+INFO:root:closing window window_3b0bffa81a28c6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa81ed7b2","eid":"main"}
+INFO:root:closing window window_3b0bffa81ed7b2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa82df3be","eid":"main"}
+INFO:root:closing window window_3b0bffa82df3be
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa83292c6","eid":"main"}
+INFO:root:closing window window_3b0bffa83292c6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8417a06","eid":"main"}
+INFO:root:closing window window_3b0bffa8417a06
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa846112e","eid":"main"}
+INFO:root:closing window window_3b0bffa846112e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8551614","eid":"main"}
+INFO:root:closing window window_3b0bffa8551614
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa859c9e8","eid":"main"}
+INFO:root:closing window window_3b0bffa859c9e8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa868c214","eid":"main"}
+INFO:root:closing window window_3b0bffa868c214
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa86d85b6","eid":"main"}
+INFO:root:closing window window_3b0bffa86d85b6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa87c9710","eid":"main"}
+INFO:root:closing window window_3b0bffa87c9710
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8817e0c","eid":"main"}
+INFO:root:closing window window_3b0bffa8817e0c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8908940","eid":"main"}
+INFO:root:closing window window_3b0bffa8908940
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa89528f6","eid":"main"}
+INFO:root:closing window window_3b0bffa89528f6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8a44550","eid":"main"}
+INFO:root:closing window window_3b0bffa8a44550
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8a906d0","eid":"main"}
+INFO:root:closing window window_3b0bffa8a906d0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8b82a88","eid":"main"}
+INFO:root:closing window window_3b0bffa8b82a88
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8bce09c","eid":"main"}
+INFO:root:closing window window_3b0bffa8bce09c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8cbe594","eid":"main"}
+INFO:root:closing window window_3b0bffa8cbe594
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8d0a5aa","eid":"main"}
+INFO:root:closing window window_3b0bffa8d0a5aa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8dfcf9e","eid":"main"}
+INFO:root:closing window window_3b0bffa8dfcf9e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8e4b124","eid":"main"}
+INFO:root:closing window window_3b0bffa8e4b124
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8f406fc","eid":"main"}
+INFO:root:closing window window_3b0bffa8f406fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8f8bb44","eid":"main"}
+INFO:root:closing window window_3b0bffa8f8bb44
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa907ceec","eid":"main"}
+INFO:root:closing window window_3b0bffa907ceec
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa90cb7bc","eid":"main"}
+INFO:root:closing window window_3b0bffa90cb7bc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa91c33b6","eid":"main"}
+INFO:root:closing window window_3b0bffa91c33b6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa920f200","eid":"main"}
+INFO:root:closing window window_3b0bffa920f200
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa93044ba","eid":"main"}
+INFO:root:closing window window_3b0bffa93044ba
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa93535bc","eid":"main"}
+INFO:root:closing window window_3b0bffa93535bc
+INFO:tornado.access:200 POST /events (127.0.0.1) 9.13ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.08ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.23ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.25ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9446ea0","eid":"main"}
+INFO:root:closing window window_3b0bffa9446ea0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa94a11b0","eid":"main"}
+INFO:root:closing window window_3b0bffa94a11b0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9598770","eid":"main"}
+INFO:root:closing window window_3b0bffa9598770
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa95e5c2e","eid":"main"}
+INFO:root:closing window window_3b0bffa95e5c2e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa96d8ef4","eid":"main"}
+INFO:root:closing window window_3b0bffa96d8ef4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9727a22","eid":"main"}
+INFO:root:closing window window_3b0bffa9727a22
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa981a658","eid":"main"}
+INFO:root:closing window window_3b0bffa981a658
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9867f18","eid":"main"}
+INFO:root:closing window window_3b0bffa9867f18
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa995bd2a","eid":"main"}
+INFO:root:closing window window_3b0bffa995bd2a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa99abf3a","eid":"main"}
+INFO:root:closing window window_3b0bffa99abf3a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9aa025a","eid":"main"}
+INFO:root:closing window window_3b0bffa9aa025a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9aee70e","eid":"main"}
+INFO:root:closing window window_3b0bffa9aee70e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9be1bc0","eid":"main"}
+INFO:root:closing window window_3b0bffa9be1bc0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9c3166a","eid":"main"}
+INFO:root:closing window window_3b0bffa9c3166a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9d24ca0","eid":"main"}
+INFO:root:closing window window_3b0bffa9d24ca0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9d74d3e","eid":"main"}
+INFO:root:closing window window_3b0bffa9d74d3e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9e6b182","eid":"main"}
+INFO:root:closing window window_3b0bffa9e6b182
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9eb7008","eid":"main"}
+INFO:root:closing window window_3b0bffa9eb7008
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9fa94ba","eid":"main"}
+INFO:root:closing window window_3b0bffa9fa94ba
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffadbb373a","eid":"main"}
+INFO:root:closing window window_3b0bffadbb373a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa9ff5464","eid":"main"}
+INFO:root:closing window window_3b0bffa9ff5464
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffae2ba076","eid":"main"}
+INFO:root:closing window window_3b0bffae2ba076
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa0e6dbc","eid":"main"}
+INFO:root:closing window window_3b0bffaa0e6dbc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffae6ae330","eid":"main"}
+INFO:root:closing window window_3b0bffae6ae330
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa132cf2","eid":"main"}
+INFO:root:closing window window_3b0bffaa132cf2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffae813ccc","eid":"main"}
+INFO:root:closing window window_3b0bffae813ccc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa22689c","eid":"main"}
+INFO:root:closing window window_3b0bffaa22689c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaeb1e53c","eid":"main"}
+INFO:root:closing window window_3b0bffaeb1e53c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa2716dc","eid":"main"}
+INFO:root:closing window window_3b0bffaa2716dc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaecb016e","eid":"main"}
+INFO:root:closing window window_3b0bffaecb016e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa363204","eid":"main"}
+INFO:root:closing window window_3b0bffaa363204
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaefc8428","eid":"main"}
+INFO:root:closing window window_3b0bffaefc8428
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa3aca42","eid":"main"}
+INFO:root:closing window window_3b0bffaa3aca42
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffea34033a","eid":"main"}
+INFO:root:closing window window_3b0bffea34033a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa49d3f0","eid":"main"}
+INFO:root:closing window window_3b0bffaa49d3f0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa4ec4de","eid":"main"}
+INFO:root:closing window window_3b0bffaa4ec4de
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa5e6048","eid":"main"}
+INFO:root:closing window window_3b0bffaa5e6048
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa63312a","eid":"main"}
+INFO:root:closing window window_3b0bffaa63312a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa729752","eid":"main"}
+INFO:root:closing window window_3b0bffaa729752
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa77943e","eid":"main"}
+INFO:root:closing window window_3b0bffaa77943e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa86de84","eid":"main"}
+INFO:root:closing window window_3b0bffaa86de84
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa8be250","eid":"main"}
+INFO:root:closing window window_3b0bffaa8be250
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaa9affe0","eid":"main"}
+INFO:root:closing window window_3b0bffaa9affe0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaaa00558","eid":"main"}
+INFO:root:closing window window_3b0bffaaa00558
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaaaf4968","eid":"main"}
+INFO:root:closing window window_3b0bffaaaf4968
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaab4732a","eid":"main"}
+INFO:root:closing window window_3b0bffaab4732a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaac3ab38","eid":"main"}
+INFO:root:closing window window_3b0bffaac3ab38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaac8a2f4","eid":"main"}
+INFO:root:closing window window_3b0bffaac8a2f4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaad84d96","eid":"main"}
+INFO:root:closing window window_3b0bffaad84d96
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaadd4d9a","eid":"main"}
+INFO:root:closing window window_3b0bffaadd4d9a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaaec853a","eid":"main"}
+INFO:root:closing window window_3b0bffaaec853a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaaf14c5c","eid":"main"}
+INFO:root:closing window window_3b0bffaaf14c5c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab0095cc","eid":"main"}
+INFO:root:closing window window_3b0bffab0095cc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab0565dc","eid":"main"}
+INFO:root:closing window window_3b0bffab0565dc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab14b89a","eid":"main"}
+INFO:root:closing window window_3b0bffab14b89a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab1a44f6","eid":"main"}
+INFO:root:closing window window_3b0bffab1a44f6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab299834","eid":"main"}
+INFO:root:closing window window_3b0bffab299834
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab2e6162","eid":"main"}
+INFO:root:closing window window_3b0bffab2e6162
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab3d93d2","eid":"main"}
+INFO:root:closing window window_3b0bffab3d93d2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab423b9a","eid":"main"}
+INFO:root:closing window window_3b0bffab423b9a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab515946","eid":"main"}
+INFO:root:closing window window_3b0bffab515946
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab56184c","eid":"main"}
+INFO:root:closing window window_3b0bffab56184c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab653d5e","eid":"main"}
+INFO:root:closing window window_3b0bffab653d5e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab69e6ae","eid":"main"}
+INFO:root:closing window window_3b0bffab69e6ae
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab78f518","eid":"main"}
+INFO:root:closing window window_3b0bffab78f518
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab7da74e","eid":"main"}
+INFO:root:closing window window_3b0bffab7da74e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab8cb528","eid":"main"}
+INFO:root:closing window window_3b0bffab8cb528
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffab919f4e","eid":"main"}
+INFO:root:closing window window_3b0bffab919f4e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaba0c262","eid":"main"}
+INFO:root:closing window window_3b0bffaba0c262
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaba588bc","eid":"main"}
+INFO:root:closing window window_3b0bffaba588bc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabb54048","eid":"main"}
+INFO:root:closing window window_3b0bffabb54048
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabba1758","eid":"main"}
+INFO:root:closing window window_3b0bffabba1758
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabc96268","eid":"main"}
+INFO:root:closing window window_3b0bffabc96268
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabce35b6","eid":"main"}
+INFO:root:closing window window_3b0bffabce35b6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabd35936","eid":"main"}
+INFO:root:closing window window_3b0bffabd35936
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabd7b774","eid":"main"}
+INFO:root:closing window window_3b0bffabd7b774
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabe6b82a","eid":"main"}
+INFO:root:closing window window_3b0bffabe6b82a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabeb7edc","eid":"main"}
+INFO:root:closing window window_3b0bffabeb7edc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabfa8c7e","eid":"main"}
+INFO:root:closing window window_3b0bffabfa8c7e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffabff4b2e","eid":"main"}
+INFO:root:closing window window_3b0bffabff4b2e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac0e6d26","eid":"main"}
+INFO:root:closing window window_3b0bffac0e6d26
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac133a2a","eid":"main"}
+INFO:root:closing window window_3b0bffac133a2a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac22cfd8","eid":"main"}
+INFO:root:closing window window_3b0bffac22cfd8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac27be1a","eid":"main"}
+INFO:root:closing window window_3b0bffac27be1a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac36fd7c","eid":"main"}
+INFO:root:closing window window_3b0bffac36fd7c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac3be782","eid":"main"}
+INFO:root:closing window window_3b0bffac3be782
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac4b1d20","eid":"main"}
+INFO:root:closing window window_3b0bffac4b1d20
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac507e00","eid":"main"}
+INFO:root:closing window window_3b0bffac507e00
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac5f97aa","eid":"main"}
+INFO:root:closing window window_3b0bffac5f97aa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac645afe","eid":"main"}
+INFO:root:closing window window_3b0bffac645afe
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac739398","eid":"main"}
+INFO:root:closing window window_3b0bffac739398
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac78462e","eid":"main"}
+INFO:root:closing window window_3b0bffac78462e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac876c98","eid":"main"}
+INFO:root:closing window window_3b0bffac876c98
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac8c22ac","eid":"main"}
+INFO:root:closing window window_3b0bffac8c22ac
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffac9c382e","eid":"main"}
+INFO:root:closing window window_3b0bffac9c382e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffaca1527a","eid":"main"}
+INFO:root:closing window window_3b0bffaca1527a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacb08cfa","eid":"main"}
+INFO:root:closing window window_3b0bffacb08cfa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacb55234","eid":"main"}
+INFO:root:closing window window_3b0bffacb55234
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacc47b36","eid":"main"}
+INFO:root:closing window window_3b0bffacc47b36
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacc91b8a","eid":"main"}
+INFO:root:closing window window_3b0bffacc91b8a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacd81038","eid":"main"}
+INFO:root:closing window window_3b0bffacd81038
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacdcb0f0","eid":"main"}
+INFO:root:closing window window_3b0bffacdcb0f0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacecb5c8","eid":"main"}
+INFO:root:closing window window_3b0bffacecb5c8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffacf1b852","eid":"main"}
+INFO:root:closing window window_3b0bffacf1b852
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad00ec3c","eid":"main"}
+INFO:root:closing window window_3b0bffad00ec3c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad05b150","eid":"main"}
+INFO:root:closing window window_3b0bffad05b150
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad14c346","eid":"main"}
+INFO:root:closing window window_3b0bffad14c346
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad1971f0","eid":"main"}
+INFO:root:closing window window_3b0bffad1971f0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad2871c0","eid":"main"}
+INFO:root:closing window window_3b0bffad2871c0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad2d22c8","eid":"main"}
+INFO:root:closing window window_3b0bffad2d22c8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad3c5e24","eid":"main"}
+INFO:root:closing window window_3b0bffad3c5e24
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad411864","eid":"main"}
+INFO:root:closing window window_3b0bffad411864
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad50296a","eid":"main"}
+INFO:root:closing window window_3b0bffad50296a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad54d332","eid":"main"}
+INFO:root:closing window window_3b0bffad54d332
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad63db8e","eid":"main"}
+INFO:root:closing window window_3b0bffad63db8e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad68a4ca","eid":"main"}
+INFO:root:closing window window_3b0bffad68a4ca
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad77fe2a","eid":"main"}
+INFO:root:closing window window_3b0bffad77fe2a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad7ca404","eid":"main"}
+INFO:root:closing window window_3b0bffad7ca404
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad8c23f2","eid":"main"}
+INFO:root:closing window window_3b0bffad8c23f2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad90bede","eid":"main"}
+INFO:root:closing window window_3b0bffad90bede
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7a1d8aa","eid":"main"}
+INFO:root:closing window window_3b0bffa7a1d8aa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7a695ee","eid":"main"}
+INFO:root:closing window window_3b0bffa7a695ee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7b5c1e4","eid":"main"}
+INFO:root:closing window window_3b0bffa7b5c1e4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7ba8da0","eid":"main"}
+INFO:root:closing window window_3b0bffa7ba8da0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7c99ba4","eid":"main"}
+INFO:root:closing window window_3b0bffa7c99ba4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7ce5be2","eid":"main"}
+INFO:root:closing window window_3b0bffa7ce5be2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7dda548","eid":"main"}
+INFO:root:closing window window_3b0bffa7dda548
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7e254fc","eid":"main"}
+INFO:root:closing window window_3b0bffa7e254fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7f17558","eid":"main"}
+INFO:root:closing window window_3b0bffa7f17558
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa7f63b56","eid":"main"}
+INFO:root:closing window window_3b0bffa7f63b56
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa80577e4","eid":"main"}
+INFO:root:closing window window_3b0bffa80577e4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa80a2b08","eid":"main"}
+INFO:root:closing window window_3b0bffa80a2b08
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa81a28c6","eid":"main"}
+INFO:root:closing window window_3b0bffa81a28c6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa81ed7b2","eid":"main"}
+INFO:root:closing window window_3b0bffa81ed7b2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa82df3be","eid":"main"}
+INFO:root:closing window window_3b0bffa82df3be
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa83292c6","eid":"main"}
+INFO:root:closing window window_3b0bffa83292c6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8417a06","eid":"main"}
+INFO:root:closing window window_3b0bffa8417a06
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa846112e","eid":"main"}
+INFO:root:closing window window_3b0bffa846112e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8551614","eid":"main"}
+INFO:root:closing window window_3b0bffa8551614
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa859c9e8","eid":"main"}
+INFO:root:closing window window_3b0bffa859c9e8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa868c214","eid":"main"}
+INFO:root:closing window window_3b0bffa868c214
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa86d85b6","eid":"main"}
+INFO:root:closing window window_3b0bffa86d85b6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa87c9710","eid":"main"}
+INFO:root:closing window window_3b0bffa87c9710
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8817e0c","eid":"main"}
+INFO:root:closing window window_3b0bffa8817e0c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8908940","eid":"main"}
+INFO:root:closing window window_3b0bffa8908940
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa89528f6","eid":"main"}
+INFO:root:closing window window_3b0bffa89528f6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8a44550","eid":"main"}
+INFO:root:closing window window_3b0bffa8a44550
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8a906d0","eid":"main"}
+INFO:root:closing window window_3b0bffa8a906d0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8b82a88","eid":"main"}
+INFO:root:closing window window_3b0bffa8b82a88
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8bce09c","eid":"main"}
+INFO:root:closing window window_3b0bffa8bce09c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8cbe594","eid":"main"}
+INFO:root:closing window window_3b0bffa8cbe594
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8d0a5aa","eid":"main"}
+INFO:root:closing window window_3b0bffa8d0a5aa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8dfcf9e","eid":"main"}
+INFO:root:closing window window_3b0bffa8dfcf9e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8e4b124","eid":"main"}
+INFO:root:closing window window_3b0bffa8e4b124
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8f406fc","eid":"main"}
+INFO:root:closing window window_3b0bffa8f406fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa8f8bb44","eid":"main"}
+INFO:root:closing window window_3b0bffa8f8bb44
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa907ceec","eid":"main"}
+INFO:root:closing window window_3b0bffa907ceec
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa90cb7bc","eid":"main"}
+INFO:root:closing window window_3b0bffa90cb7bc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa91c33b6","eid":"main"}
+INFO:root:closing window window_3b0bffa91c33b6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa920f200","eid":"main"}
+INFO:root:closing window window_3b0bffa920f200
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa93044ba","eid":"main"}
+INFO:root:closing window window_3b0bffa93044ba
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffa93535bc","eid":"main"}
+INFO:root:closing window window_3b0bffa93535bc
+INFO:tornado.access:200 POST /events (127.0.0.1) 4.07ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad63db8e","eid":"main"}
+INFO:root:closing window window_3b0bffad63db8e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad68a4ca","eid":"main"}
+INFO:root:closing window window_3b0bffad68a4ca
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad77fe2a","eid":"main"}
+INFO:root:closing window window_3b0bffad77fe2a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad7ca404","eid":"main"}
+INFO:root:closing window window_3b0bffad7ca404
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad8c23f2","eid":"main"}
+INFO:root:closing window window_3b0bffad8c23f2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bffad90bede","eid":"main"}
+INFO:root:closing window window_3b0bffad90bede
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.45ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.56ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.12ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.89ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.79ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.46ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.16ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.29ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.39ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.89ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.29ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.82ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.14ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.31ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.06ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.23ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.29ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.28ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.29ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.37ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.61ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.30ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.11ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.04ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.49ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.31ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.23ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.25ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.28ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.39ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.25ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 3.00ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bfff74e426a","eid":"main"}
+INFO:root:closing window window_3b0bfff74e426a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bfff7510ea6","eid":"main"}
+INFO:root:closing window window_3b0bfff7510ea6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0bfffbe94a20","eid":"main"}
+INFO:root:closing window window_3b0bfffbe94a20
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00020abb1c","eid":"main"}
+INFO:root:closing window window_3b0c00020abb1c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c000829dd5c","eid":"main"}
+INFO:root:closing window window_3b0c000829dd5c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c000cbac758","eid":"main"}
+INFO:root:closing window window_3b0c000cbac758
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0010c9a27e","eid":"main"}
+INFO:root:closing window window_3b0c0010c9a27e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0014d82c9c","eid":"main"}
+INFO:root:closing window window_3b0c0014d82c9c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00196426ae","eid":"main"}
+INFO:root:closing window window_3b0c00196426ae
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c001d73be8c","eid":"main"}
+INFO:root:closing window window_3b0c001d73be8c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c002663a4c0","eid":"main"}
+INFO:root:closing window window_3b0c002663a4c0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c002f58d03e","eid":"main"}
+INFO:root:closing window window_3b0c002f58d03e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c002f5d135a","eid":"main"}
+INFO:root:closing window window_3b0c002f5d135a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c002f63295c","eid":"main"}
+INFO:root:closing window window_3b0c002f63295c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00302744d0","eid":"main"}
+INFO:root:closing window window_3b0c00302744d0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00302bf46e","eid":"main"}
+INFO:root:closing window window_3b0c00302bf46e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0034483550","eid":"main"}
+INFO:root:closing window window_3b0c0034483550
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0038665b8e","eid":"main"}
+INFO:root:closing window window_3b0c0038665b8e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c003c7452d2","eid":"main"}
+INFO:root:closing window window_3b0c003c7452d2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c004083e586","eid":"main"}
+INFO:root:closing window window_3b0c004083e586
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0044926a82","eid":"main"}
+INFO:root:closing window window_3b0c0044926a82
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0048a0e74a","eid":"main"}
+INFO:root:closing window window_3b0c0048a0e74a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c004cb0cd86","eid":"main"}
+INFO:root:closing window window_3b0c004cb0cd86
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0050c2e3e0","eid":"main"}
+INFO:root:closing window window_3b0c0050c2e3e0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0054d5e48a","eid":"main"}
+INFO:root:closing window window_3b0c0054d5e48a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0058ee5134","eid":"main"}
+INFO:root:closing window window_3b0c0058ee5134
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0058f10b7c","eid":"main"}
+INFO:root:closing window window_3b0c0058f10b7c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0058f43116","eid":"main"}
+INFO:root:closing window window_3b0c0058f43116
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0059a38676","eid":"main"}
+INFO:root:closing window window_3b0c0059a38676
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0059a67cec","eid":"main"}
+INFO:root:closing window window_3b0c0059a67cec
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c005db4c1ae","eid":"main"}
+INFO:root:closing window window_3b0c005db4c1ae
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0061c399a0","eid":"main"}
+INFO:root:closing window window_3b0c0061c399a0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0065d16adc","eid":"main"}
+INFO:root:closing window window_3b0c0065d16adc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0069e0c156","eid":"main"}
+INFO:root:closing window window_3b0c0069e0c156
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c006df0736c","eid":"main"}
+INFO:root:closing window window_3b0c006df0736c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c007200c3b2","eid":"main"}
+INFO:root:closing window window_3b0c007200c3b2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0076106d90","eid":"main"}
+INFO:root:closing window window_3b0c0076106d90
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c007a1f97e4","eid":"main"}
+INFO:root:closing window window_3b0c007a1f97e4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c007e2ed07e","eid":"main"}
+INFO:root:closing window window_3b0c007e2ed07e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00823c4de0","eid":"main"}
+INFO:root:closing window window_3b0c00823c4de0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00823f49a4","eid":"main"}
+INFO:root:closing window window_3b0c00823f49a4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0082424cb6","eid":"main"}
+INFO:root:closing window window_3b0c0082424cb6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00831ac55e","eid":"main"}
+INFO:root:closing window window_3b0c00831ac55e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00831de888","eid":"main"}
+INFO:root:closing window window_3b0c00831de888
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00872c7a08","eid":"main"}
+INFO:root:closing window window_3b0c00872c7a08
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c008b3b05b2","eid":"main"}
+INFO:root:closing window window_3b0c008b3b05b2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c008f4a73f8","eid":"main"}
+INFO:root:closing window window_3b0c008f4a73f8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0093594380","eid":"main"}
+INFO:root:closing window window_3b0c0093594380
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c009769bacc","eid":"main"}
+INFO:root:closing window window_3b0c009769bacc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c009b78439c","eid":"main"}
+INFO:root:closing window window_3b0c009b78439c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c009f86b95e","eid":"main"}
+INFO:root:closing window window_3b0c009f86b95e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c00a39623c0","eid":"main"}
+INFO:root:closing window window_3b0c00a39623c0
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.47ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.37ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.49ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.35ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.49ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.37ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.57ms
+INFO:tornado.access:200 GET / (127.0.0.1) 13.32ms
+INFO:tornado.access:200 GET /static/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9 (127.0.0.1) 0.76ms
+INFO:tornado.access:200 GET /static/css/react-resizable-styles.css?v=9f91a8dbf4d8f7ef1399e625660405f4 (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/js/react-react.min.js?v=bca103da5b5404d93783ccf73e0e9d1e (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/css/bootstrap.min.css?v=ec3bb52a00e176a7181d454dffaea219 (127.0.0.1) 6.76ms
+INFO:tornado.access:200 GET /static/css/react-grid-layout-styles.css?v=7dc8934d2f9ac5303b8f0bb1148152a0 (127.0.0.1) 0.60ms
+INFO:tornado.access:200 GET /static/js/layout_bin_packer.js?v=6c46683ed70fbb1443caf3531243836d (127.0.0.1) 0.64ms
+INFO:tornado.access:200 GET /static/js/jquery.min.js?v=e071abda8fe61194711cfc2ab99fe104 (127.0.0.1) 15.36ms
+INFO:tornado.access:200 GET /static/js/react-dom.min.js?v=950495cc51ccb90612cf0fe0bb44f8f3 (127.0.0.1) 10.32ms
+INFO:tornado.access:200 GET /static/js/plotly-plotly.min.js?v=1f15d7ed9dd856a12c0469be4eede0cf (127.0.0.1) 18.13ms
+INFO:tornado.access:200 GET /static/js/main.js?v=47fc3afa811b358b354df09184e392e7 (127.0.0.1) 6.56ms
+INFO:tornado.access:200 GET /static/css/style.css?v=fb4729780f2360ef5d3dba13f8ff2873 (127.0.0.1) 0.80ms
+INFO:tornado.access:200 GET /static/js/mathjax-MathJax.js?v=49565b9ce89c64da075a5a39969b366e (127.0.0.1) 1.30ms
+INFO:tornado.access:200 GET /static/fonts/glyphicons-halflings-regular.woff2 (127.0.0.1) 0.89ms
+INFO:tornado.access:200 GET /favicon.png (127.0.0.1) 18.86ms
+INFO:tornado.access:101 GET /socket (127.0.0.1) 0.69ms
+INFO:root:Opened new socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.26ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.86ms
+INFO:tornado.access:200 GET /extensions/MathMenu.js?V=2.7.1 (127.0.0.1) 14.57ms
+INFO:tornado.access:200 GET /extensions/MathZoom.js?V=2.7.1 (127.0.0.1) 12.97ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07161e1880","eid":"main"}
+INFO:root:closing window window_3b0c07161e1880
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.61ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.43ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.47ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.35ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.34ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.41ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.32ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.21ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.27ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.41ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.11ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.12ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.30ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.93ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.28ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.23ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.40ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.22ms
+/usr/local/lib/python3.7/dist-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1913, in main
+    use_frontend_client_polling=FLAGS.use_frontend_client_polling)
+  File "/usr/local/lib/python3.7/dist-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/web.py", line 2042, in listen
+    server.listen(port, address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/tcpserver.py", line 143, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/netutil.py", line 168, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.90ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.36ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.60ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.95ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.51ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.97ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.47ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.66ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.08ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.67ms
+INFO:tornado.access:200 GET / (127.0.0.1) 17.44ms
+INFO:tornado.access:200 GET /static/css/react-resizable-styles.css?v=9f91a8dbf4d8f7ef1399e625660405f4 (127.0.0.1) 1.24ms
+INFO:tornado.access:200 GET /static/css/bootstrap.min.css?v=ec3bb52a00e176a7181d454dffaea219 (127.0.0.1) 7.01ms
+INFO:tornado.access:200 GET /static/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9 (127.0.0.1) 1.52ms
+INFO:tornado.access:200 GET /static/js/jquery.min.js?v=e071abda8fe61194711cfc2ab99fe104 (127.0.0.1) 7.43ms
+INFO:tornado.access:200 GET /static/css/react-grid-layout-styles.css?v=7dc8934d2f9ac5303b8f0bb1148152a0 (127.0.0.1) 1.16ms
+INFO:tornado.access:200 GET /static/js/react-react.min.js?v=bca103da5b5404d93783ccf73e0e9d1e (127.0.0.1) 1.19ms
+INFO:tornado.access:200 GET /static/css/style.css?v=fb4729780f2360ef5d3dba13f8ff2873 (127.0.0.1) 1.19ms
+INFO:tornado.access:200 GET /static/js/layout_bin_packer.js?v=6c46683ed70fbb1443caf3531243836d (127.0.0.1) 4.71ms
+INFO:tornado.access:200 GET /static/js/react-dom.min.js?v=950495cc51ccb90612cf0fe0bb44f8f3 (127.0.0.1) 19.44ms
+INFO:tornado.access:200 GET /static/js/plotly-plotly.min.js?v=1f15d7ed9dd856a12c0469be4eede0cf (127.0.0.1) 22.46ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.31ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.70ms
+INFO:tornado.access:200 GET /static/js/main.js?v=47fc3afa811b358b354df09184e392e7 (127.0.0.1) 12.27ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.09ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.69ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 11.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.90ms
+INFO:tornado.access:200 GET /static/js/mathjax-MathJax.js?v=49565b9ce89c64da075a5a39969b366e (127.0.0.1) 1.88ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.08ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.57ms
+INFO:tornado.access:200 GET /static/fonts/glyphicons-halflings-regular.woff2 (127.0.0.1) 2.08ms
+INFO:tornado.access:200 GET /favicon.png (127.0.0.1) 15.16ms
+INFO:tornado.access:101 GET /socket (127.0.0.1) 0.73ms
+INFO:root:Opened new socket from ip: 127.0.0.1
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 40.38ms
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 36.53ms
+INFO:tornado.access:200 GET /extensions/MathMenu.js?V=2.7.1 (127.0.0.1) 15.71ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c073ecba29c","eid":"main"}
+INFO:root:closing window window_3b0c073ecba29c
+INFO:tornado.access:200 GET /extensions/MathZoom.js?V=2.7.1 (127.0.0.1) 21.11ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.24ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.27ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.06ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c073ecee0a8","eid":"main"}
+INFO:root:closing window window_3b0c073ecee0a8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07436be678","eid":"main"}
+INFO:root:closing window window_3b0c07436be678
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07477b33d2","eid":"main"}
+INFO:root:closing window window_3b0c07477b33d2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c074b88c8d0","eid":"main"}
+INFO:root:closing window window_3b0c074b88c8d0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c074f9781fa","eid":"main"}
+INFO:root:closing window window_3b0c074f9781fa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0753a620ee","eid":"main"}
+INFO:root:closing window window_3b0c0753a620ee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0757b5516e","eid":"main"}
+INFO:root:closing window window_3b0c0757b5516e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c075bc37dde","eid":"main"}
+INFO:root:closing window window_3b0c075bc37dde
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c075fda55fc","eid":"main"}
+INFO:root:closing window window_3b0c075fda55fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0763e80eb0","eid":"main"}
+INFO:root:closing window window_3b0c0763e80eb0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0767f448e2","eid":"main"}
+INFO:root:closing window window_3b0c0767f448e2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0767f7c670","eid":"main"}
+INFO:root:closing window window_3b0c0767f7c670
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0767fb0704","eid":"main"}
+INFO:root:closing window window_3b0c0767fb0704
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0768a54a7a","eid":"main"}
+INFO:root:closing window window_3b0c0768a54a7a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0768a8ac1c","eid":"main"}
+INFO:root:closing window window_3b0c0768a8ac1c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c076cb65ea6","eid":"main"}
+INFO:root:closing window window_3b0c076cb65ea6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0770c44c68","eid":"main"}
+INFO:root:closing window window_3b0c0770c44c68
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0774d24654","eid":"main"}
+INFO:root:closing window window_3b0c0774d24654
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0778e58240","eid":"main"}
+INFO:root:closing window window_3b0c0778e58240
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c077cf9c396","eid":"main"}
+INFO:root:closing window window_3b0c077cf9c396
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07b7225e3a","eid":"main"}
+INFO:root:closing window window_3b0c07b7225e3a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07c7203836","eid":"main"}
+INFO:root:closing window window_3b0c07c7203836
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07c7232ad8","eid":"main"}
+INFO:root:closing window window_3b0c07c7232ad8
+INFO:tornado.access:200 POST /events (127.0.0.1) 4.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.65ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.98ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.22ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.16ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.97ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.85ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.31ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.27ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.95ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.19ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.07ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.23ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.01ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.24ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.27ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.07ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.06ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.15ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.17ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.72ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.25ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.92ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.90ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.91ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.09ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.92ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07cbcc0eee","eid":"main"}
+INFO:root:closing window window_3b0c07cbcc0eee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07cbd00c6e","eid":"main"}
+INFO:root:closing window window_3b0c07cbd00c6e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07cfea4128","eid":"main"}
+INFO:root:closing window window_3b0c07cfea4128
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07cfee467e","eid":"main"}
+INFO:root:closing window window_3b0c07cfee467e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07d4053508","eid":"main"}
+INFO:root:closing window window_3b0c07d4053508
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07d408c244","eid":"main"}
+INFO:root:closing window window_3b0c07d408c244
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07d826c87c","eid":"main"}
+INFO:root:closing window window_3b0c07d826c87c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07d82dc13e","eid":"main"}
+INFO:root:closing window window_3b0c07d82dc13e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07dc42237e","eid":"main"}
+INFO:root:closing window window_3b0c07dc42237e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07dc45ca02","eid":"main"}
+INFO:root:closing window window_3b0c07dc45ca02
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c073ecba29c","eid":"main"}
+INFO:root:closing window window_3b0c073ecba29c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c073ecee0a8","eid":"main"}
+INFO:root:closing window window_3b0c073ecee0a8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07436be678","eid":"main"}
+INFO:root:closing window window_3b0c07436be678
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07477b33d2","eid":"main"}
+INFO:root:closing window window_3b0c07477b33d2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c074b88c8d0","eid":"main"}
+INFO:root:closing window window_3b0c074b88c8d0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c074f9781fa","eid":"main"}
+INFO:root:closing window window_3b0c074f9781fa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0753a620ee","eid":"main"}
+INFO:root:closing window window_3b0c0753a620ee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0757b5516e","eid":"main"}
+INFO:root:closing window window_3b0c0757b5516e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c075bc37dde","eid":"main"}
+INFO:root:closing window window_3b0c075bc37dde
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c075fda55fc","eid":"main"}
+INFO:root:closing window window_3b0c075fda55fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0763e80eb0","eid":"main"}
+INFO:root:closing window window_3b0c0763e80eb0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0767f448e2","eid":"main"}
+INFO:root:closing window window_3b0c0767f448e2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0767f7c670","eid":"main"}
+INFO:root:closing window window_3b0c0767f7c670
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0767fb0704","eid":"main"}
+INFO:root:closing window window_3b0c0767fb0704
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0768a54a7a","eid":"main"}
+INFO:root:closing window window_3b0c0768a54a7a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0768a8ac1c","eid":"main"}
+INFO:root:closing window window_3b0c0768a8ac1c
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c076cb65ea6","eid":"main"}
+INFO:root:closing window window_3b0c076cb65ea6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0770c44c68","eid":"main"}
+INFO:root:closing window window_3b0c0770c44c68
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0774d24654","eid":"main"}
+INFO:root:closing window window_3b0c0774d24654
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0778e58240","eid":"main"}
+INFO:root:closing window window_3b0c0778e58240
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c077cf9c396","eid":"main"}
+INFO:root:closing window window_3b0c077cf9c396
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07b7225e3a","eid":"main"}
+INFO:root:closing window window_3b0c07b7225e3a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07c7203836","eid":"main"}
+INFO:root:closing window window_3b0c07c7203836
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07c7232ad8","eid":"main"}
+INFO:root:closing window window_3b0c07c7232ad8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07e06224ac","eid":"main"}
+INFO:root:closing window window_3b0c07e06224ac
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07e065c788","eid":"main"}
+INFO:root:closing window window_3b0c07e065c788
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07e4758aee","eid":"main"}
+INFO:root:closing window window_3b0c07e4758aee
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07e4793646","eid":"main"}
+INFO:root:closing window window_3b0c07e4793646
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07ea860b28","eid":"main"}
+INFO:root:closing window window_3b0c07ea860b28
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07ea8b9a80","eid":"main"}
+INFO:root:closing window window_3b0c07ea8b9a80
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07eea0c020","eid":"main"}
+INFO:root:closing window window_3b0c07eea0c020
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07eea4390a","eid":"main"}
+INFO:root:closing window window_3b0c07eea4390a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f30cb294","eid":"main"}
+INFO:root:closing window window_3b0c07f30cb294
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f30fc040","eid":"main"}
+INFO:root:closing window window_3b0c07f30fc040
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f312f54a","eid":"main"}
+INFO:root:closing window window_3b0c07f312f54a
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f315e952","eid":"main"}
+INFO:root:closing window window_3b0c07f315e952
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f3c08fb2","eid":"main"}
+INFO:root:closing window window_3b0c07f3c08fb2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f3c33ffa","eid":"main"}
+INFO:root:closing window window_3b0c07f3c33ffa
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f7d2ab08","eid":"main"}
+INFO:root:closing window window_3b0c07f7d2ab08
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07f7d569e2","eid":"main"}
+INFO:root:closing window window_3b0c07f7d569e2
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07fbe3ade8","eid":"main"}
+INFO:root:closing window window_3b0c07fbe3ade8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07fbe71c38","eid":"main"}
+INFO:root:closing window window_3b0c07fbe71c38
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07fff6e0d6","eid":"main"}
+INFO:root:closing window window_3b0c07fff6e0d6
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c07fffa658e","eid":"main"}
+INFO:root:closing window window_3b0c07fffa658e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0804159b44","eid":"main"}
+INFO:root:closing window window_3b0c0804159b44
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0804195a68","eid":"main"}
+INFO:root:closing window window_3b0c0804195a68
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0808290a5e","eid":"main"}
+INFO:root:closing window window_3b0c0808290a5e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c08082cef74","eid":"main"}
+INFO:root:closing window window_3b0c08082cef74
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c080c3aa322","eid":"main"}
+INFO:root:closing window window_3b0c080c3aa322
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c080c3e2ce4","eid":"main"}
+INFO:root:closing window window_3b0c080c3e2ce4
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c08104c92a0","eid":"main"}
+INFO:root:closing window window_3b0c08104c92a0
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0810501366","eid":"main"}
+INFO:root:closing window window_3b0c0810501366
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c08145e9882","eid":"main"}
+INFO:root:closing window window_3b0c08145e9882
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081461fffe","eid":"main"}
+INFO:root:closing window window_3b0c081461fffe
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c08187082fe","eid":"main"}
+INFO:root:closing window window_3b0c08187082fe
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081873d708","eid":"main"}
+INFO:root:closing window window_3b0c081873d708
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081c81b524","eid":"main"}
+INFO:root:closing window window_3b0c081c81b524
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081c84a9fc","eid":"main"}
+INFO:root:closing window window_3b0c081c84a9fc
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081c87680e","eid":"main"}
+INFO:root:closing window window_3b0c081c87680e
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081c8a25ea","eid":"main"}
+INFO:root:closing window window_3b0c081c8a25ea
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081c8ef648","eid":"main"}
+INFO:root:closing window window_3b0c081c8ef648
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c081c91dc90","eid":"main"}
+INFO:root:closing window window_3b0c081c91dc90
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0820a0deb8","eid":"main"}
+INFO:root:closing window window_3b0c0820a0deb8
+INFO:root:from web client: {"cmd":"close","data":"window_3b0c0820a3d296","eid":"main"}
+INFO:root:closing window window_3b0c0820a3d296
+INFO:tornado.access:200 POST /events (127.0.0.1) 19.10ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 7.18ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.70ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.24ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.75ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.24ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.12ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.21ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.16ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.15ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.09ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.19ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.00ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.16ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.27ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.05ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.95ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.98ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.28ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.08ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.47ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.29ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.21ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.19ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.07ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 2.20ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.23ms
