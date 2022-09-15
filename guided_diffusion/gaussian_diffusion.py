@@ -872,7 +872,7 @@ class GaussianDiffusion:
             terms["r2_score"] = r2_score(x_start.cpu().detach().numpy().flatten(),x0_pred.cpu().detach().numpy().flatten())
             # terms["l1_xstart"] = mean_flat(th.abs((self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output) - x_start)))
             if "vb" in terms:
-                terms["loss"] = terms["mse"] + terms["vb"] + terms["l1_xstart"]
+                terms["loss"] = terms["mse"] + terms["vb"] + terms["l1_xstart"] + terms["advesarial"]
             else:
                 terms["loss"] = terms["mse"]
         else:
