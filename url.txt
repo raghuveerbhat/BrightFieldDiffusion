@@ -1,0 +1,30 @@
+your url is: https://bitter-toys-thank-34-80-33-145.loca.lt
+/tools/node/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:44807 (check your firewall settings)
+    at Socket.<anonymous> (/tools/node/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+your url is: https://brown-pans-rule-34-83-166-14.loca.lt
+your url is: https://short-onions-hear-34-83-166-14.loca.lt
+your url is: https://tender-monkeys-greet-34-83-166-14.loca.lt
+your url is: https://two-seas-stare-34-90-102-120.loca.lt
+your url is: https://cyan-ads-draw-35-194-191-67.loca.lt
+/tools/node/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:43333 (check your firewall settings)
+    at Socket.<anonymous> (/tools/node/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+your url is: https://ripe-coins-return-35-194-191-67.loca.lt
+your url is: https://quick-results-think-35-194-191-67.loca.lt
+your url is: https://new-areas-pump-35-194-191-67.loca.lt
+your url is: https://loud-clubs-walk-35-194-191-67.loca.lt
