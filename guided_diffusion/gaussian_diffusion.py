@@ -14,6 +14,9 @@ import torch as th
 from .nn import mean_flat
 from .losses import normal_kl, discretized_gaussian_log_likelihood
 from sklearn.metrics import r2_score
+from skimage.metrics import structural_similarity as ssim
+from math import log10, sqrt
+from scipy.stats import pearsonr
 
 from visdom import Visdom
 viz = Visdom(port=8850)
@@ -30,6 +33,13 @@ def visualize_1_1(img):
     normalized_img = (img - _min)/ (_max - _min)
     return normalized_img
 
+def PSNR(original, compressed):
+    mse = np.mean((original - compressed) ** 2)
+    if(mse == 0):
+        return 100
+    max_pixel = 255.0
+    psnr = 20 * log10(max_pixel / sqrt(mse))
+    return psnr 
 
 def get_named_beta_schedule(schedule_name, num_diffusion_timesteps):
     """
@@ -775,7 +785,20 @@ class GaussianDiffusion:
         output = th.where((t == 0), decoder_nll, kl)
         return {"output": output, "pred_xstart": out["pred_xstart"]}
 
-    def training_losses(self, model, x_start, input_bf, t, model_kwargs=None, noise=None):
+    def set_requires_grad(self, nets, requires_grad=False):
+        """Set requies_grad=Fasle for all the networks to avoid unnecessary computations
+        Parameters:
+            nets (network list)   -- a list of networks
+            requires_grad (bool)  -- whether the networks require gradients or not
+        """
+        if not isinstance(nets, list):
+            nets = [nets]
+        for net in nets:
+            if net is not None:
+                for param in net.parameters():
+                    param.requires_grad = requires_grad
+
+    def training_losses(self, model, x_start, input_bf, advesarial, GAN_loss, optimizer_D, t, model_kwargs=None, noise=None):
         """
         Compute training losses for a single timestep.
 
@@ -835,8 +858,36 @@ class GaussianDiffusion:
             terms["mse"] = mean_flat((target - model_output) ** 2)
             # terms["mse"] = mean_flat(th.abs((target - model_output)))
             x0_pred = self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output).clamp(-1,1)
+            if advesarial is not None:
+                fake_B = x0_pred
+                self.set_requires_grad(advesarial, True)
+                optimizer_D.zero_grad()
+                fake_AB = th.cat((input_bf, fake_B), 1)
+                pred_fake = advesarial(fake_AB.detach())
+                loss_D_fake = GAN_loss(pred_fake, False)
+                real_AB = th.cat((input_bf, x_start), 1)
+                pred_real = advesarial(real_AB)
+                loss_D_real = GAN_loss(pred_real, True)
+                loss_D = (loss_D_fake + loss_D_real) * 0.5
+                loss_D.backward()
+                optimizer_D.step()
+                self.set_requires_grad(advesarial, False)
+                fake_AB = th.cat((input_bf, fake_B), 1)
+                pred_fake = advesarial(fake_AB)
+                loss_G_GAN = GAN_loss(pred_fake, True)
+                terms["advesarial"] = loss_G_GAN * 0.0001
+            else:
+                terms["advesarial"] = 0
             terms["l1_xstart"] = mean_flat(th.abs((x0_pred - x_start)))
             terms["r2_score"] = r2_score(x_start.cpu().detach().numpy().flatten(),x0_pred.cpu().detach().numpy().flatten())
+            # print(x_start.cpu().detach().numpy().shape)
+            terms["pearson_r_score"] = pearsonr(x_start.cpu().detach().numpy().flatten(),x0_pred.cpu().detach().numpy().flatten())[0]
+            terms["pearson_pvalue"] = pearsonr(x_start.cpu().detach().numpy().flatten(),x0_pred.cpu().detach().numpy().flatten())[1]
+            terms["ssim_score"] = 0
+            terms["psnr"] = 0
+            for i in range(0,x_start.cpu().detach().numpy().shape[0]):
+              terms["ssim_score"] += ssim(x_start.cpu().detach().numpy()[i][0], x0_pred.cpu().detach().numpy()[i][0], data_range=x0_pred.cpu().detach().numpy()[i][0].max() - x0_pred.cpu().detach().numpy()[i][0].min()) / x_start.cpu().detach().numpy().shape[0]
+              terms["psnr"] += PSNR(x_start.cpu().detach().numpy()[i][0], x0_pred.cpu().detach().numpy()[i][0]) / x_start.cpu().detach().numpy().shape[0]
             # terms["l1_xstart"] = mean_flat(th.abs((self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output) - x_start)))
             if "vb" in terms:
                 terms["loss"] = terms["mse"] + terms["vb"] + terms["l1_xstart"]

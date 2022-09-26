@@ -50,11 +50,11 @@ class DNADataset(torch.utils.data.Dataset):
         self.database = []
         self.transform_req = False
         self.transform = A.Compose([
-            A.RandomCrop(width=128, height=128),
-            A.HorizontalFlip(p=0.5),
-            A.VerticalFlip(p=0.5),
+            # A.RandomCrop(width=256, height=256),
+            # A.HorizontalFlip(p=0.5),
+            # A.VerticalFlip(p=0.5),
             # A.ShiftScaleRotate(p=0.5),
-            A.RandomRotate90(),
+            # A.RandomRotate90(),
             ToTensorV2()
         ],
         additional_targets={'image0': 'image'})
@@ -90,11 +90,12 @@ class DNADataset(torch.utils.data.Dataset):
               else:
                 im_frame = Image.open(filedict[seqtype])
                 np_frame = np.array(im_frame)
-                np_frame = (np_frame.astype(np.float32)/127.5) - 1
+                np_frame = (np_frame.astype(np.float32)/127.5) - 1.0
                 path=filedict[seqtype]
                 out.append(torch.tensor(np_frame))
           out = torch.stack(out)
           bf = out[:-1,...]
+          #uncomment for dna
           # bf = out[0]
           # bf = bf.astype(np.float32)
           flo = out[-1, ...][None, ...]
@@ -112,11 +113,15 @@ class DNADataset(torch.utils.data.Dataset):
             flo = (2.0 * transformed['image0']) - 1.0
           return (bf, flo)
         else:
+          print("Opening src:",filedict[self.seqtypes[0]])
+          print("Opening targ:",filedict[self.seqtypes[1]])
           sf = np.array(Image.open(filedict[self.seqtypes[0]]))
           tf = np.array(Image.open(filedict[self.seqtypes[1]]))
           transformed = self.transform(image=sf,image0=tf)
           bf = transformed['image']/127.5 - 1.0
           flo = transformed['image0']/127.5 - 1.0
+          print(bf.shape)
+          print(flo.shape)
           return (bf, flo)
 
     def __len__(self):

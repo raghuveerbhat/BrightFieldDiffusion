@@ -12,6 +12,7 @@ from . import dist_util, logger
 from .fp16_util import MixedPrecisionTrainer
 from .nn import update_ema
 from .resample import LossAwareSampler, UniformSampler
+from .advesarial import *
 
 # For ImageNet experiments, this was a good default value.
 # We found that the lg_loss_scale quickly climbed to
@@ -71,6 +72,18 @@ class TrainLoop:
             use_fp16=self.use_fp16,
             fp16_scale_growth=fp16_scale_growth,
         )
+        
+        self.use_gan = False
+        if self.use_gan:
+            self.adv = define_D(2, 64, 'basic',
+                                          3, 'batch', 'normal', 0.02, [])
+            self.criterionGAN = GANLoss('vanilla').to(dist_util.dev())
+            self.optimizer_D = th.optim.Adam(self.adv.parameters(), lr=self.lr, betas=(0.5, 0.999))
+            print('use adv')
+        else:
+            self.criterionGAN = None
+            self.adv = None
+            self.optimizer_D = None
 
         self.opt = AdamW(
             self.mp_trainer.master_params, lr=self.lr, weight_decay=self.weight_decay
@@ -196,12 +209,22 @@ class TrainLoop:
             }
             last_batch = (i + self.microbatch) >= batch.shape[0]
             t, weights = self.schedule_sampler.sample(micro.shape[0], dist_util.dev())
-
+            if self.step <-1:
+                adv_loss = None
+                criterionGAN_loss = None
+                optimizer_D = None
+            else:
+                adv_loss = self.adv
+                criterionGAN_loss = self.criterionGAN
+                optimizer_D = self.optimizer_D
             compute_losses = functools.partial(
                 self.diffusion.training_losses,
                 self.ddp_model,
                 micro,
                 micro_bf,
+                adv_loss,
+                criterionGAN_loss,
+                optimizer_D,
                 t,
                 model_kwargs=micro_cond,
             )
