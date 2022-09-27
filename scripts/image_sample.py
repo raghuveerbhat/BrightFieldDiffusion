@@ -137,7 +137,7 @@ def create_argparser():
         task_type="",
         data_dir="",
         clip_denoised=True,
-        num_samples=16,
+        num_samples=4,
         batch_size=1,
         use_ddim=False,
         model_path="",
