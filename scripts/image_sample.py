@@ -71,7 +71,7 @@ def main():
     model.eval()
     
     logger.log("data loader...")
-    data = initialize_dataset(args.data_dir, args.batch_size)
+    data = initialize_dataset(args.data_dir, args.batch_size, args.task_type, args.image_size)
     datal = iter(data)
     logger.log("sampling...")
     all_images = []
@@ -134,6 +134,7 @@ def main():
 
 def create_argparser():
     defaults = dict(
+        task_type="",
         data_dir="",
         clip_denoised=True,
         num_samples=16,

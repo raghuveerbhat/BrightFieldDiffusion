@@ -37,7 +37,7 @@ def main():
 
     logger.log("creating data loader...")
     
-    data = initialize_dataset(args.data_dir, args.batch_size)
+    data = initialize_dataset(args.data_dir, args.batch_size, args.task_type, args.image_size, args.aug_req)
     # data = load_data(
     #     data_dir=args.data_dir,
     #     batch_size=args.batch_size,
@@ -67,6 +67,8 @@ def main():
 
 def create_argparser():
     defaults = dict(
+        task_type="sir_DNA",
+        aug_req=False,
         data_dir="",
         schedule_sampler="uniform",
         lr=1e-4,
