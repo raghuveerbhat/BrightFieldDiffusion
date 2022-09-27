@@ -818,9 +818,9 @@ class GaussianDiffusion:
         x_t = self.q_sample(x_start, t, noise=noise)
 
         terms = {}
-        # viz.image(visualize_1_1(input_bf.cpu()[0, 0,...]), opts=dict(caption="input_bf"))
-        # viz.image(visualize_1_1(x_start.cpu()[0, 0,...]), opts=dict(caption="x_start"))
-        # viz.image(visualize(x_t.cpu()[0, 0,...]), opts=dict(caption="x_t"))
+        viz.image(visualize_1_1(input_bf.cpu()[0, 0,...]), opts=dict(caption="input_bf"))
+        viz.image(visualize_1_1(x_start.cpu()[0, 0,...]), opts=dict(caption="x_start"))
+        viz.image(visualize(x_t.cpu()[0, 0,...]), opts=dict(caption="x_t"))
         if self.loss_type == LossType.MSE or self.loss_type == LossType.RESCALED_MSE:
             model_output = model(x_t, input_bf, self._scale_timesteps(t), **model_kwargs)
 

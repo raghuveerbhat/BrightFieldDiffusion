@@ -17,8 +17,8 @@ def normalize_negative_one(img):
     return 2.0*normalized_input - 1.0
 
 # Initialize DNADataset and return data loader iter
-def initialize_dataset(root_dir="", batch_size=2, src="/src/", target="/targ/", shuffle_required=True):
-    ds = DNADataset(root_dir, src, target)
+def initialize_dataset(root_dir="", batch_size=2, task_type="", im_size=256, aug_req=False,  src="/src/", target="/targ/", shuffle_required=True):
+    ds = DNADataset(root_dir, src, target, task_type, im_size, aug_req)
     loader = torch.utils.data.DataLoader(
         ds, batch_size=batch_size, shuffle=shuffle_required
     )
@@ -26,7 +26,7 @@ def initialize_dataset(root_dir="", batch_size=2, src="/src/", target="/targ/", 
 
 
 class DNADataset(torch.utils.data.Dataset):
-    def __init__(self, directory, source_dr="/src/", target_dr="/targ/"):
+    def __init__(self, directory, source_dr="/src/", target_dr="/targ/", task_type="", im_size=256, aug_req=False):
         '''
         directory is expected to contain some folder structure:
                   if some subfolder contains only files, all of these
@@ -41,6 +41,9 @@ class DNADataset(torch.utils.data.Dataset):
         self.source_dir = directory + source_dr
         self.target_dir = directory + target_dr
         self.directory = os.path.expanduser(self.source_dir)
+        self.task_type = task_type
+        self.im_size = im_size
+        self.aug_req = aug_req
 
         self.normalization = False
         self.ftype = "png"
@@ -49,15 +52,29 @@ class DNADataset(torch.utils.data.Dataset):
         self.seqtypes_set = set(self.seqtypes)
         self.database = []
         self.transform_req = False
-        self.transform = A.Compose([
-            # A.RandomCrop(width=256, height=256),
-            # A.HorizontalFlip(p=0.5),
-            # A.VerticalFlip(p=0.5),
-            # A.ShiftScaleRotate(p=0.5),
-            # A.RandomRotate90(),
+        self.transform = None
+        
+        if self.task_type == "DNA":
+            self.ftype = "tiff"
+        
+
+        if self.aug_req == True:
+            self.transform = A.Compose([
+              A.RandomCrop(width=self.im_size, height=self.im_size),
+              A.HorizontalFlip(p=0.5),
+              A.VerticalFlip(p=0.5),
+              # A.ShiftScaleRotate(p=0.5),
+              A.RandomRotate90(),
+              ToTensorV2()
+            ],
+            additional_targets={'image0': 'image'})
+        else:
+            self.transform = A.Compose([
+            A.RandomCrop(width=self.im_size, height=self.im_size),
             ToTensorV2()
-        ],
-        additional_targets={'image0': 'image'})
+          ],
+          additional_targets={'image0': 'image'})
+
         for root, dirs, files in os.walk(self.directory):
             # if there are no subdirs, we have data
             if not dirs:
@@ -93,22 +110,28 @@ class DNADataset(torch.utils.data.Dataset):
                 np_frame = (np_frame.astype(np.float32)/127.5) - 1.0
                 path=filedict[seqtype]
                 out.append(torch.tensor(np_frame))
-          out = torch.stack(out)
-          bf = out[:-1,...]
-          #uncomment for dna
-          # bf = out[0]
-          # bf = bf.astype(np.float32)
-          flo = out[-1, ...][None, ...]
-          # flo = out[-1]
-          # flo = flo.astype(np.float32)
-          if self.ftype == "tiff":
-            # flo = torch.where(flo > 0, flo, flo).float()
+          bf = None
+          flo = None
+          transformed = None
+          if self.task_type != "DNA":
+            out = torch.stack(out)
+            bf = out[:-1,...]
+            flo = out[-1, ...][None, ...]
+          else:
+            #uncomment for dna
+            bf = out[0]
+            bf = bf.astype(np.float32)
+            flo = out[-1]
+            flo = flo.astype(np.float32)
+          if self.task_type == "DNA":
+            flo = torch.where(flo > 0, flo, flo).float()
             pass
           else:
             pass
             # flo = torch.where(flo > 0, 1, -1).float()
-          # transformed = self.transform(image=bf,image0=flo)
-          if self.ftype == "tiff":
+          if self.task_type == "DNA":
+            transformed = self.transform(image=bf,image0=flo)
+          if self.task_type == "DNA":
             bf = (2.0 * transformed['image']) - 1.0
             flo = (2.0 * transformed['image0']) - 1.0
           return (bf, flo)
