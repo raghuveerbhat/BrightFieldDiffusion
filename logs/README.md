@@ -1,0 +1,1 @@
+This folder will contain all the logs during training and sampling process.
