@@ -18,4 +18,5 @@ Credits:
 1. Prafulla Dhariwal, and Alex Nichol 2021. Diffusion Models Beat GANs on Image Synthesis. CoRR, abs/2105.05233. (https://arxiv.org/abs/2105.05233)
    And source code found in: https://github.com/openai/guided-diffusion
 2. https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix - For the discriminator network architecture
-3. Also many thanks to my supervisor Dr.Iain Styles(https://www.cs.bham.ac.uk/~ibs/) without whom this work wouldn't be done. His constant assistance and guidance at every stage of the research was immensely helpful. Also thanks to Dr. Carl Wilding (https://uk.linkedin.com/in/carl-wilding-4048a5101) for providing constructive feedback on my project.
+3. Weng, Lilian. (Jul 2021). What are diffusion models? Lil’Log. https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+4. Also many thanks to my supervisor Dr.Iain Styles(https://www.cs.bham.ac.uk/~ibs/) without whom this work wouldn't be done. His constant assistance and guidance at every stage of the research was immensely helpful. Also thanks to Dr. Carl Wilding (https://uk.linkedin.com/in/carl-wilding-4048a5101) for providing constructive feedback on my project.
