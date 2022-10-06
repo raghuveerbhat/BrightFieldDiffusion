@@ -2,6 +2,19 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12zjYQ033V8n05D-SITDUZxXbxgK_u0EZ)
 
+
+### Diffusion Sampling Output - Example -Transmitted Light Image to Fluorescent Target(TOM20 labeled with Alexa Fluor 594):
+
+##### Dataset credit: Spahn, C., & Heilemann, M. (2020). ZeroCostDL4Mic - Label-free prediction (fnet) example training and test dataset (Version v2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.3748967
+
+Input Transmitted Light Image     | Ground Truth Fluorescent Target (TOM20)|  Diffusion Model Sampling Process 
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/30499524/194135624-5fb52acf-9672-442d-801a-a3c5cc02687f.jpg) | ![ (5)](https://user-images.githubusercontent.com/30499524/194135737-0587f546-5b3d-4ae3-aaf6-924d317b6cd2.jpg) | ![](https://user-images.githubusercontent.com/30499524/194133483-f3897ba4-f7af-4d63-8b0a-3e047651fe85.gif) |
+![visdom_image (2)](https://user-images.githubusercontent.com/30499524/194136017-83472a77-9034-4577-86e3-313c992937aa.jpg) | ![visdom_image (3)](https://user-images.githubusercontent.com/30499524/194136061-51eee711-6760-415b-bc40-7ae320798d5b.jpg) | ![](https://user-images.githubusercontent.com/30499524/194133858-73ddd43b-824f-4243-9d9d-d0e62f482250.gif)
+![visdom_image (1)](https://user-images.githubusercontent.com/30499524/194136130-4ec441c1-9465-4f3d-8b22-1f493fe0c0c0.jpg) | ![visdom_image (4)](https://user-images.githubusercontent.com/30499524/194136178-301bfcf2-6916-4b4c-b63f-9cbe7c0ea8af.jpg) | ![](https://user-images.githubusercontent.com/30499524/194134903-098a3cf0-ae9b-4ad1-9076-74d6fcdc6a21.gif)
+
+
+
 ### Diffusion Sampling Output - Example - lifeact-RFP to sir-DNA:
 
 Input Conditional Signal (lifeact-RFP)          | Ground Truth Target (sir-DNA) |  Diffusion Model Sampling Process 
