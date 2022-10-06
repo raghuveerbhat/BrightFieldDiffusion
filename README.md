@@ -2,6 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12zjYQ033V8n05D-SITDUZxXbxgK_u0EZ)
 
+Fluorescence microscope images have many application, especially in healthcare field. But they are often expensive, time-consuming, and damaging to cells. So, a potential solution is to use transmitted light image which is relatively low cost to obtain and is label/dye free. But it lacks clear and specific contrast between different structures. So, my work explored the use of diffusion models to translate from transmitted light image to fluorescence image. Over traditional method, like U-net, my approach is also able to produce variance maps since I'm trying to predict the entire target image distribution.
 
 ### Diffusion Sampling Output - Example -Transmitted Light Image to Fluorescent Target(TOM20 labeled with Alexa Fluor 594):
 
