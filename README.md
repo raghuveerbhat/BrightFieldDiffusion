@@ -24,6 +24,10 @@ Input Conditional Signal (lifeact-RFP)          | Ground Truth Target (sir-DNA) 
 ![](https://user-images.githubusercontent.com/30499524/193465403-ca1a16cf-abb4-41b9-a613-351d38b4faa2.png) | ![](https://user-images.githubusercontent.com/30499524/193465609-2c79b4ea-beea-4cdf-a225-db9deaa33892.png)| ![](https://media0.giphy.com/media/iUFuDEcPQrQ7MR4gMZ/giphy.gif)
 ![](https://user-images.githubusercontent.com/30499524/193465589-8a466613-adb6-4eb6-a88e-43d9f3253ad1.png) | ![](https://user-images.githubusercontent.com/30499524/193465646-bf15767d-67e7-4732-87d8-48fba0c0bbd2.png)| ![](https://media4.giphy.com/media/XHT4rO3MzVLpkabIx8/giphy.gif)
 
+### Uncertainity Map for lifeact-RFP to sir-DNA:
+
+![](https://raw.githubusercontent.com/raghuveerbhat/BrightFieldDiffusion/main/figures/mean_var_fig14.png)
+
 ### Architecture:
 
 ![](https://raw.githubusercontent.com/raghuveerbhat/BrightFieldDiffusion/main/figures/proposed_arch_fig10.png)
