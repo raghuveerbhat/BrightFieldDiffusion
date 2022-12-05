@@ -35,6 +35,9 @@ Input Conditional Signal (lifeact-RFP)          | Ground Truth Target (sir-DNA) 
 ### Complete Report:
 https://drive.google.com/file/d/15_wCXFuqHkFsNnH8OVUgwUu_2FYEw33r/view?usp=sharing
 
+### Presentation:
+https://docs.google.com/presentation/d/1GJT3Eeq-3QbhA5H54fTH7MeN7_pI-xaNqsKhT9L33c8/edit?usp=sharing
+
 Credits:
 1. Prafulla Dhariwal, and Alex Nichol 2021. Diffusion Models Beat GANs on Image Synthesis. CoRR, abs/2105.05233. (https://arxiv.org/abs/2105.05233)
    And source code found in: https://github.com/openai/guided-diffusion
